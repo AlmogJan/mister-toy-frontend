@@ -1,0 +1,18 @@
+/* Setup */
+
+@import "../src/assets/css/setup/variables.css";
+/* @import './setup/fonts.css'; */
+
+/* Basics */
+
+@import "../src/assets/css/basics/base.css";
+@import "../src/assets/css/basics/helpers.css";
+/* @import './basics/layout.css'; */
+
+/* Views */
+@import "../src/views/Home/Home.css";
+
+/* Cmps */
+@import "../src/components/UserMsg/UserMsg.css";
+@import "../src/components/AppHeader/AppHeader.css";
+

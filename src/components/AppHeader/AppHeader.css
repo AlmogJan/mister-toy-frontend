@@ -1,0 +1,28 @@
+header {
+  /* background: var(--light-purplr); */
+  border-bottom: 2px solid var(--dark-purple);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo{
+  width: 10em;
+}
+
+nav a {
+  margin: 0.5em;
+}
+
+nav a:active {
+  color: purple;
+}
+
+nav a.active {
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: overline;
+}
