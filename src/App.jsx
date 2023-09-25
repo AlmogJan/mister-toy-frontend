@@ -8,7 +8,7 @@ import { ToyIndex } from './views/ToyIndex/ToyIndex'
 import { About } from './views/About/About'
 import { ToyDetails } from './views/ToyDetails/ToyDetails'
 import { ToyEdit } from './components/ToyEdit/ToyEdit'
-import { Dashborad } from './components/Dashboard/Dashborad'
+import { Dashboard } from './views/Dashboard/Dashboard.jsx'
 function App() {
 
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route path="/toy" element={<ToyIndex />} />
             <Route path="/toy/:toyId" element={<ToyDetails />} />
             <Route path="/toy/edit/:toyId" element={<ToyEdit />} />
-            <Route path="/dashboard" element={<Dashborad />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </section>
       </Router>
