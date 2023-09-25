@@ -48,11 +48,7 @@ export function DoughnutChart({ toys }) {
         })
     }, [toys])
 
-    useEffect(() => {
-        console.log(data)
-    }, [data])
     function getToyLabelsCount() {
-        console.log("toys", toys)
         const res = toys.map(toy => toy.labels).reduce((prev, curr) => ([...prev, ...curr]), [])
             .reduce((prev, curr) => {
                 const newValue = { ...prev };
