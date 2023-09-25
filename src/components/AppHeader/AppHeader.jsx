@@ -22,6 +22,11 @@ export function AppHeader() {
             toys
           </NavLink>
         </button>
+        <button className="img-btn">
+          <NavLink to="/dashboard">
+            Dashboard
+          </NavLink>
+        </button>
       </nav>
     </header>
   );
