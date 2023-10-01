@@ -1,0 +1,85 @@
+@mixin heading($color,$type){
+    font-weight: 700;
+    color:$color;
+    @if $type== primary-large{
+        font-size: 100px;
+        line-height: 100px;
+    }
+    @else if $type==primary-small{
+        font-size: 64px;
+        line-height: 56px;
+    }
+    @else if $type== secondary-large{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    @else if $type== secondary-small{
+        font-size:28px;
+        line-height: 28px;
+    }
+}
+
+@mixin body($color,$type){
+    color:$color;
+    @if $type== large{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    @else if $type==small{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    @else if $type==mini{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+@mixin button($type,$bcg-color,$color){
+    height: 30px;
+    width: 120px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 28px;
+    border-radius: 24px;
+    border: 2px solid transparent;
+        @if $type==primary{
+        background-color: $bcg-color;
+        color: $color;
+        border-color: $color;
+        &:hover{
+            background-color: $color;
+            color: $bcg-color; 
+        }
+        &:disabled{
+            $light:lighten($color: $bcg-color, $amount: 30%);
+            color:$light;
+            border-color: $light;
+        }
+    }
+    @else if type==secondary{
+        background-color: $bcg-color;
+        color: $color;
+        border-color: $color;
+        &:hover{
+            $super-light:lighten($color: $color, $amount: 60%);
+            background-color: $super-light;
+            border-color: $super-light;
+        }
+        &:disabled{
+            $light:lighten($color: $color, $amount: 30%);
+            background-color: $light;
+            border-color: $light;
+        }
+    }
+}
+
+@mixin flex-centr($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}

@@ -29,7 +29,7 @@ export function ToyList({ toys, onToyRemove }) {
 
     return <ul className="toy-list clean-list">
         {toys.filter((toy) => labelsFilter.length < 1 || toy.labels.some(label => labelsFilter.includes(label))).filter((toy) => inStock === "all" || inStock === "inStock" ? toy.inStock : !toy.inStock).filter((toy) => toy.name.toLowerCase().includes(search.toLowerCase())).sort(resolveSort()).map((toy, idx) =>
-            <li key={idx}>
+            <li key={idx} className="toy-card">
                 <ToyPreview toy={toy}></ToyPreview>
                 <button onClick={() => onToyRemove(toy.id)}>Delete</button>
                 <button><Link to={`/toy/edit/${toy.id}`}>Edit</Link></button>

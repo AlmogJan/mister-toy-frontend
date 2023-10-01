@@ -9,7 +9,7 @@ export function ToyFilter() {
     return <div className="toy-filter flex align-center space-between">
         <div>
             <div>
-                <input type="text" name="search" placeholder="search" onChange={debounce((({ target }) => { setFilterBySearch(target.value) }), 200)} />
+                <input className="searchBar" type="text" name="search" placeholder="search" onChange={debounce((({ target }) => { setFilterBySearch(target.value) }), 200)} />
             </div>
             <select name="inStock" onChange={debounce((({ target }) =>
                 setFilterByInStock(target.value)

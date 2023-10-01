@@ -6,8 +6,9 @@ export function ToyPreview({ toy }) {
     }, [])
     const navigate = useNavigate()
     return <div onClick={() => navigate(`/toy/${toy.id}`)}>
-        <h3>{toy.name}</h3>
-        <h5>{toy.price}$</h5>
-        {toy.inStock ? (<p>in stock</p>) : (<p>not in stock</p>)}
+        <h1>🧸</h1>
+        <h3 className="name">{toy.name}</h3>
+        <h5 className="price">{toy.price}$</h5>
+        {toy.inStock ? (<p className="in-stock">in stock</p>) : (<p>not in stock</p>)}
     </div>
 }

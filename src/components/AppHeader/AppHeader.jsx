@@ -4,7 +4,7 @@ export function AppHeader() {
   return (
     <header className="app-header flex align-center">
       <Link to="/">
-        <img className="logo" src="src/assets/img/est 1918.svg" alt="Logo" />
+        {/* <img className="logo" src="frontend/src/assets/img/secondary-Tiny-Tales-Toys-no-background.png" alt="logo" /> */}
       </Link>
       <nav>
         <button className="img-btn">

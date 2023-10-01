@@ -1,0 +1,24 @@
+header {
+  background-color: $tan;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo{
+  width: 10em;
+}
+
+nav a {
+  font-family: Livvic,sans-serif;
+  font-size: 18px;
+  margin: 0.5em;
+  color:$headers-yellow;
+  font-weight: bold;
+}
+nav a.active {
+  text-decoration: underline;
+}

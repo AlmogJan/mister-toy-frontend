@@ -42,8 +42,8 @@ export function LineChart({ toys }) {
             {
                 label: 'Added At',
                 data: [],
-                borderColor: 'rgb(255, 99, 132)',
-                backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                borderColor: 'rgb(255,218,239)',
+                backgroundColor: 'rgba(255,218,239, 0.5)',
             }
         ],
     })

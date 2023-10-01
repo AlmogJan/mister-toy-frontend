@@ -1,0 +1,7 @@
+.name{
+    @include heading($headers-yellow,secondary-small)
+}
+.price{
+    @include body($headers-yellow,large)
+    
+}

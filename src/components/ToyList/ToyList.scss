@@ -1,0 +1,22 @@
+.toy-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding-inline: 24px;
+}
+
+.toy-card{
+    background-color: $tan;
+    @include flex-centr(space-around);
+    flex-direction: column;
+    text-align: center;
+    padding-block: 10px;
+    height: max-content;
+    width: 100%;
+    button{
+        @include button(primary,$tan,$text-brown);
+        @include flex-centr(center)
+    }
+}
+

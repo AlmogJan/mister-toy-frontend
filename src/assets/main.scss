@@ -1,0 +1,29 @@
+/* Setup */
+
+@import "css/setup/variables";
+@import "css/setup/fonts";
+@import "css/setup/mixins";
+
+/* Basics */
+
+@import "css/basics/base";
+
+/* Views */
+// @import "views/Home/Home";
+// @import "views/About/About";
+// @import "views/ToyIndex/ToyIndex";
+// @import "views/ToyDetails/ToyDetails";
+// @import "views/Dashboard/Dashboard";
+
+
+// /* Cmps */
+@import "../components/AppHeader/AppHeader";
+// @import 'components/Dashboard/DoughnutChart/DoughnutChart';
+// @import 'components/Dashboard/LineChart/LineChart';
+// @import 'components/Map/Map';
+// @import 'components/ToyAdd/ToyAdd';
+// @import 'components/ToyEdit/ToyEdit';
+// @import 'components/ToyFilter/ToyFilter';
+@import '../components/ToyList/ToyList';
+@import '../components/ToyPreview/ToyPreview';
+// @import 'components/UserMsg/UserMsg';

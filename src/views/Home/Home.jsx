@@ -1,3 +1,5 @@
 export function Home() {
-    return <div>giiii</div>
+    return <div>
+        <img src="frontend/src/assets/img/banner.png" alt="" />
+    </div>
 }
